@@ -1,13 +1,9 @@
 language: objective-c
-xcode_project: Bugsnag.xcodeproj
-xcode_scheme: Bugsnag
+osx_image: xcode7.2
 xcode_sdk:
+  - iphonesimulator9.1
   - iphonesimulator8.1
   - iphonesimulator7.1
   - iphonesimulator7.0
-notifications:
-  hipchat:
-    rooms:
-      secure: cv5V8ivZExOywKL9n0CODnxy9m5u4rQ5ZMYK8XHPIoqQKkvH9DQOeb2ItW2aM2kxeupJEcQEy1Eu4sYMGhyzKUNdqbFtQBhDYxRwSAgTRIkGlHQCnznyExHWZbGfDB8y/m11HiZ1wuPuqs8ZZ+VccNb4bwJKbhPTbf1RZ+GPeU8=
-git:
-  submodules: false
+install: make bootstrap
+script: make test
