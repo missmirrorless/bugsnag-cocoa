@@ -35,7 +35,7 @@
 #endif
 
 
-@implementation NSDictionary (KSMerge)
+@implementation NSDictionary (BugsnagKSMerge)
 
 - (NSDictionary*) mergedInto:(NSDictionary*) dest
 {
@@ -65,4 +65,4 @@
 
 @end
 
-@interface NSDictionary_Merge_O8FG4A : NSObject @end @implementation NSDictionary_Merge_O8FG4A @end
+@interface NSDictionary_Bugsnag_Merge_O8FG4A : NSObject @end @implementation NSDictionary_Bugsnag_Merge_O8FG4A @end

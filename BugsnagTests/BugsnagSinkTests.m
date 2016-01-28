@@ -28,7 +28,7 @@
     NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:@"report" ofType:@"json"];
     NSString *contents = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:[contents dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
-    self.report = [[BugsnagCrashReport alloc] initWithKSReport:dictionary];
+    self.report = [[BugsnagCrashReport alloc] initWithBugsnagKSReport:dictionary];
     self.sink = [[BugsnagSink alloc] init];
     
     BugsnagConfiguration *config = [[BugsnagConfiguration alloc] init];

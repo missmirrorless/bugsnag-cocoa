@@ -83,5 +83,5 @@
 
 @end
 
-@interface NSError_SimpleConstructor_AOG8G : NSObject @end @implementation NSError_SimpleConstructor_AOG8G @end
+@interface NSError_Bugsnag_SimpleConstructor_AOG8G : NSObject @end @implementation NSError_Bugsnag_SimpleConstructor_AOG8G @end
 

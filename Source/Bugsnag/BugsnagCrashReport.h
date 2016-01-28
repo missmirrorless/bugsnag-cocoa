@@ -1,5 +1,5 @@
 //
-//  KSCrashReport.h
+//  BugsnagKSCrashReport.h
 //  Bugsnag
 //
 //  Created by Simon Maynard on 11/26/14.
@@ -10,7 +10,7 @@
 
 @interface BugsnagCrashReport : NSObject
 
-- (id)initWithKSReport:(NSDictionary*)report;
+- (id)initWithBugsnagKSReport:(NSDictionary*)report;
 
 @property NSDictionary *ksReport;
 

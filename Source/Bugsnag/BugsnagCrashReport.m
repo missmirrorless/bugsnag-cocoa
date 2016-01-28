@@ -1,5 +1,5 @@
 //
-//  KSCrashReport.m
+//  BugsnagKSCrashReport.m
 //  Bugsnag
 //
 //  Created by Simon Maynard on 11/26/14.
@@ -9,7 +9,7 @@
 #import "BugsnagCrashReport.h"
 
 @implementation BugsnagCrashReport
--(id)initWithKSReport:(NSDictionary *)report {
+-(id)initWithBugsnagKSReport:(NSDictionary *)report {
     if((self = [super init])) {
         self.ksReport = report;
     }
